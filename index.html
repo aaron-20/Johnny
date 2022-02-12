@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/Logo RealEstate.svg" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- header opening -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">
+                <img src="img/Logo RealEstate.svg" alt="Real State Logo">
+            </a>
+            <a href="#" class="open-side" onclick="openSlideMenu()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </a>
+
+            <ul>
+                <li><a href="#">Nav Link</a></li>
+                <li><a href="#">Nav Link</a></li>
+                <li><a href="#">Nav Link</a></li>
+                <li><a href="#">Nav Link</a></li>
+                <a href="#" class="work-with-us">
+                    <p>Work with us</p>
+                    <img src="img/Arrow White.svg" alt="White Arrow">
+                </a>
+            </ul>
+        </nav>
+
+        <div id="side-nav" class="side-menu">
+            <a href="#" class="close-side" onclick="closeSlideMenu()">&times;</a>
+            <a class="side" href="#">Nav Link</a>
+            <a class="side" href="#">Nav Link</a>
+            <a class="side" href="#">Nav Link</a>
+            <a class="side" href="#">Nav Link</a>
+            <a class="side" href="#">Work with us</a>
+        </div>
+
+    </header>
+    <!-- header closing -->
+    <section>
+        <div class="full-image"></div>
+        <div class="home-texts">
+            <h1>Beautiful homes made for you</h1>
+            <p>In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, ut labore et
+            accurate disserendum et harum quidem exercitus quid.</p>
+        </div>
+        <div class="see-listing">
+            <a class="see-listing-info" href="#">
+                <p>See all listing</p>
+                <img src="img/Arrow Tellow.svg" alt="">
+            </a>
+        </div>
+    </section>
+    
+    <section>
+        <div class="good-hands">
+            <div class="good-hands-pic"></div>
+            <div class="good-hands-texts" data-aos="fade-right">
+                <h2>You're in good hands</h2>
+                <p>Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit, ne ferae quidem se repellere, idque instituit
+                docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi involuta aperiri, altera occulta quaedam
+                et voluptatem accusantium doloremque.</p> 
+            </div>
+            <a href="#" class="good-hands-button" data-aos="fade-right">
+                <p>Learn more</p>
+                <img src="img/Arrow Tellow.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="property-container">
+            <h2>Find your next place to live</h2>
+            <!-- drop-down menu, choosing place to live in -->
+            <div class="property-choose">
+                <select name="search" id="search">
+                    <option value="">Looking for</option>
+                </select>
+                <select name="address" id="address">
+                    <option value="">Location</option>
+                </select>
+                <select name="type" id="type">
+                    <option value="">Property Type</option>
+                </select>
+                <select name="value" id="value">
+                    <option value="">Price</option>
+                </select>
+            </div>
+            <!-- house examples -->
+            <div class="house-examples">
+                <!-- house #1 -->
+                <div class="house-container">
+                    <div class="house1"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <!-- icons property -->
+                    <div class="property-icons">
+                        <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- house #2 -->
+                <div class="house-container">
+                    <div class="house2"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <div class="property-icons">
+                            <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- house #3 -->
+                <div class="house-container">
+                    <div class="house3"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <div class="property-icons">
+                        <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- house #4 -->
+                <div class="house-container">
+                    <div class="house4"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <div class="property-icons">
+                        <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- house #5 -->
+                <div class="house-container">
+                    <div class="house5"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <div class="property-icons">
+                           <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- house #6 -->
+                <div class="house-container">
+                    <div class="house6"></div>
+                    <h3>Malto House</h3>
+                    <!-- 3 lines separator -->
+                    <div class="lines-separator">
+                        <img src="img/lines separator.svg" alt="lines">
+                    </div>
+                    <div class="property-icons">
+                        <!-- for bed -->
+                        <div class="bed">
+                            <img src="img/Bed.svg" alt="bed">
+                            <p>4</p>
+                        </div>
+                        <!-- for shower -->
+                        <div class="shower">
+                            <img src="img/Shower.svg" alt="shower">
+                            <p>2</p>
+                        </div>
+                            <!-- for size -->
+                        <div class="size">
+                            <img src="img/Size.svg" alt="size">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- you're in good hands 2nd -->
+    <section>
+        <div class="good-hands1">
+            <div class="good-hands-pic1"></div>
+            <div class="good-hands-texts1">
+                <h2>You're in good hands</h2>
+                <p>Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit, ne ferae quidem se repellere, idque instituit
+                docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi involuta aperiri, altera occulta quaedam
+                et voluptatem accusantium doloremque.</p> 
+            </div>
+            <a href="#" class="good-hands-button1"">
+                <p>Learn more</p>
+                <img src="img/Arrow Tellow.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <!-- you're in good hands colored background -->
+    <section>
+        <div class="good-hands-colored">
+            <div class="texts-container" data-aos="fade-right">
+                <h2>You're in good hands</h2>
+                <p>Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit, ne ferae quidem se repellere, idque instituit
+                docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi involuta aperiri, altera occulta quaedam
+                et voluptatem accusantium doloremque.</p> 
+            </div>
+            <a href="#" class="good-hands-button2" data-aos="fade-right">
+                <p>Learn more</p>
+                <img src="img/Arrow Tellow.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <!-- clients' review part -->
+    <section>
+        <div class="client-container">
+            <!-- client 1 -->
+            <div class="client-review">
+                <div class="pic-name-container">
+                    <img src="img/Oval.png" alt="client-pic">
+                    <div class="pos-name">
+                        <h2>Lara Madrigal</h2>
+                        <h3>Client</h3>
+                    </div>
+                </div>
+                <div class="review-text hide-text">
+                    <p>"Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit
+                    hosti et quidem faciunt, ut aut.”</p>
+                </div>
+            </div>
+            <!-- client 2 -->
+            <div class="client-review">
+                <div class="pic-name-container">
+                    <img src="img/Oval.png" alt="client-pic">
+                    <div class="pos-name">
+                        <h2>Lara Madrigal</h2>
+                        <h3>Client</h3>
+                    </div>
+                </div>
+                <div class="review-text hide-text">
+                    <p>"Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit
+                    hosti et quidem faciunt, ut aut.”</p>
+                </div>
+            </div>
+            <!-- client 3 -->
+            <div class="client-review">
+                <div class="pic-name-container">
+                    <img src="img/Oval.png" alt="client-pic">
+                    <div class="pos-name">
+                        <h2>Lara Madrigal</h2>
+                        <h3>Client</h3>
+                    </div>
+                </div>
+                <div class="review-text hide-text">
+                    <p>"Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit
+                    hosti et quidem faciunt, ut aut.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+
+    <script>
+        function openSlideMenu()
+        {
+            document.getElementById('side-nav').style.width= '100%';
+        }
+
+        function closeSlideMenu()
+        {
+            document.getElementById('side-nav').style.width= '0';
+        }
+    </script>
+</body>
+<!-- footer part -->
+<footer>
+    <div class="footer-container">
+        <div class="main-text-container">
+            <h2>Make your dreams a</h2>
+            <h2 class="text-highlight">reality</h2>
+            <a href="#" class="footer-work-with-us">
+                <p>Work with us</p>
+                <img src="img/Arrow White.svg" alt="White Arrow">
+            </a>
+            <!-- line separation -->
+           <hr class="outline">
+        </div>
+
+            <!-- links1 -->
+        <div class="main-links-container">
+            <div class="links-container">
+                <h3>Column Heading</h3>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+            </div>
+            <!-- links 2 -->
+            <div class="links-container">
+                <h3>Column Heading</h3>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+            </div>
+            <!-- links 3 -->
+            <div class="links-container">
+                <h3>Column Heading</h3>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+                <a href="#">Link goes here</a>
+            </div>
+        </div>
+        <!-- logo and socmed icons  -->
+        <div class="logo-icons-container">
+            <a class="ipsum-logo" href="#-">
+                <img src="img/Logo RealEstate.svg" alt="Real State Logo">
+            </a>
+            <div class="socmed-icons">
+                <a href="#">
+                    <img src="img/001-facebook.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="img/003-twitter.svg" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="img/004-instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
